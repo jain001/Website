@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WELCOME TO MY WORLD</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+      <style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", "sans-serif" }
+</style>
+  </head>
+  <body>
+  
+    <header>
+ <div class="container">
+ <div id="branding">
+     <h1><i class="fa fa-globe" aria-hidden="true"></i> <span class="highlight">Welcome</span> To My World </h1>
+        </div> 
+     
+      <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="edu.html">Education</a></li>
+            <li><a href="sto.html">Stories</a></li>
+              <li><a href="gal.html">Gallery</a></li>
+          </ul>
+        </nav>
+        </div>
+        
+      </header>
+       <section id="showcase">
+      
+          <img name="slide" width="100%" height="65%" />
+
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 4000;	// Time Between Switch
+	 
+// Image List
+images[0] = "img/div1.png";
+images[1] = "img/div2.png";
+images[2] = "img/div3.png";
+images[3] = "img/div4.png";
+    images[4] = "img/div5.png";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+    
+    </section>
+      
+     
+                 
+      <div class="w3-container w3-card w3-white">
+      
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Motivation and ambition</b></h5>
+          <p style="font-family: Comic Sans MS; color:grey; font-size:26px";>I am able to perform well in high pressure environments as<br> I am very competitive with a strong motivation to succeed.<br> An example of this is the way I was able to balance my study with my dancing and event management interests while at school.<br> I am a self-motivator.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Communication, presentation and networking</b></h5>
+          <p style="font-family: Comic Sans MS; color:grey; font-size:26px";> Throughout my studies I have developed my oral communication skills, contributing to seminars and debates in my class.<br> I was assessed on my presentation skills on a number of occasions and received feedback confirming that I am a confident presenter.<br> This is something I enjoy.
+</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Quick learner</b></h5>
+          <p style="font-family: Comic Sans MS; color:grey; font-size:26px";>I am a quick learner and always am curious to learn new things and keep myself updated with the new technologies that are evolving day by day.
+</p><br>
+        </div>
+      </div>
+      
+      
+      <footer>
+<section>
+
+<h3 style="font-size:26px;"><b>Divanshi Kumawat</b></h3>
+<p style="font-size:22px;"><b>Computer Science Engineer</b></p>    
+</section>
+
+<section>
+<h3> Connect With Us !</h3>
+<ul class="social">
+<li><a href="https://www.instagram.com/diva_kiara/" target="_blank"><img src="img/insta.jpg" /></a></li>
+<li><a href="https://www.facebook.com/divanshi.kumawat" target="_blank"><img src="img/facebook.png" /></a></li>
+<li><a href="https://www.linkedin.com/in/divanshi-kumawat-315359105/" target="_blank"><img src="img/linkedin.png" /></a></li>
+<li><a href="https://twitter.com/divanshi6" target="_blank"><img src="img/twitter.png" /></a></li>
+</ul>
+</section>
+
+<section>
+<img class="display center" src="img/profile.jpg" />
+
+</section>
+</footer>
+      
+
+      
+      
+      
+</body>
+</html>
